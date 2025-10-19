@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara's Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <div class="profile-header">
+      <div class="avatar-container">
+        <img data-testid="test-user-avatar"
+          src=""
+          alt="Clara pic">
+        <div class="status-indicator" title="Available for work"></div>
+      </div>
+      <h2 data-testid="test-user-name">Clara</h2>
+      <div class="user-title">Frontend Developer & Entrepreneur</div>
+    </div>
+    <div class="profile-content">
+      <div class="main-content">
+        <p data-testid="test-user-bio">
+          Passionate frontend developer with 2+ years of experience creating accessible, responsive web applications. Love working with modern JavaScript frameworks. Really just a cool girl.
+        </p>
+        <div class="time-card">
+          <h3><i class="fas fa-clock"></i> Current Time (Milliseconds)</h3>
+          <span data-testid="test-user-time" id="currentTime">Loading...</span>
+        </div>
+        <div class="section-title">
+          <i class="fas fa-share-alt"></i> Connect With Me
+        </div>
+        <nav>
+          <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+              <a data-testid="test-user-social-github" href="" target="_blank"
+                rel="noopener noreferrer" class="social-link">
+                <span class="social-icon"><i class="fab fa-github"></i></span>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a data-testid="test-user-social-twitter" href="" target="_blank"
+                rel="noopener noreferrer" class="social-link">
+                <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a data-testid="test-user-social-linkedin" href="" target="_blank"
+                rel="noopener noreferrer" class="social-link">
+                <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="side-content">
+        <div class="interests-container">
+          <div class="interest-card">
+            <h3><i class="fas fa-heart hobbies-icon"></i>Interests</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Reading</li>
+              <li>Photography</li>
+              <li>Programming</li>
+              <li>Scenting nice</li>     
+            </ul>
+          </div>
+          <div class="interest-card">
+            <h3><i class="fas fa-thumbs-down dislikes-icon"></i>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Not Scenting nice</li>
+              <li>Mosquitoes</li>
+              <li>Annoying people</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script src="js/script.js"></script>
+</body>
+</html>
